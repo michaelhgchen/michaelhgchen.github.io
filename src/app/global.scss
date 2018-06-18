@@ -1,0 +1,48 @@
+@import 'theme';
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+
+/* tag overrides */
+html {
+  background-color: $dark;
+  box-sizing: border-box;
+  color: $light;
+  font-family: Roboto;
+  height: 100%;
+}
+
+body {
+  height: 100%;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+a {
+  text-decoration: none;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  margin-bottom: $space-m;
+  margin-top: 0;
+}
+
+/* initial transitions */
+:global {
+  #app {
+    height: 100%;
+  }
+
+  .fade {
+    transition: 500ms opacity;
+    transition-delay: 500ms;
+  }
+
+  .has-js .fade-out {
+    opacity: 0;
+  }
+
+  .fade-in {
+    opacity: 1;
+  }
+}
