@@ -320,9 +320,6 @@ h1, h2, h3, h4, h5, h6 {
   margin-top: 0; }
 
 /* initial transitions */
-#app {
-  height: 100%; }
-
 .fade {
   transition: 500ms opacity;
   transition-delay: 500ms; }
@@ -332,6 +329,14 @@ h1, h2, h3, h4, h5, h6 {
 
 .fade-in {
   opacity: 1; }
+
+.above-the-fold {
+  background-color: #E85A4F;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 50vh;
+  min-height: 20rem; }
 
 /* icons */
 @font-face {
@@ -377,10 +382,5 @@ h1, h2, h3, h4, h5, h6 {
     color: #2F4454; }
 
 .hero {
-  align-items: center;
-  justify-content: space-between;
-  background-color: #E85A4F;
-  display: flex;
-  padding: 0 1rem;
-  height: 50%; }
+  padding: 1rem; }
 

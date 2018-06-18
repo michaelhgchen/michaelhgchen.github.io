@@ -1,5 +1,14 @@
 @import 'theme';
 
+.above-the-fold {
+  background-color: $primary;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 50vh;
+  min-height: 20rem;
+}
+
 /* icons */
 @font-face {
   font-family: 'icomoon';
@@ -58,10 +67,5 @@
 }
 
 .hero {
-  align-items: center;
-  justify-content: space-between;
-  background-color: $primary;
-  display: flex;
-  padding: 0 $space-m;
-  height: 50%;
+  padding: $space-m;
 }
