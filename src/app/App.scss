@@ -1,12 +1,21 @@
 @import 'theme';
 
-.above-the-fold {
-  background-color: $primary;
+.page-half {
   display: flex;
   align-items: center;
   justify-content: center;
   height: 50vh;
   min-height: 20rem;
+}
+
+.page-half--primary {
+  background-color: $primary;
+  color: $font-light;
+}
+
+.page-half--secondary {
+  background-color: $secondary;
+  color: $font-dark;
 }
 
 /* icons */
@@ -22,7 +31,7 @@
 }
 
 .icon {
-  font-size: 3em;
+  font-size: 2em;
   height: 1em;
   width: 1em;
   font-family: 'icomoon' !important;
@@ -49,23 +58,43 @@
 }
 
 /* "modules" */
-.link-container a {
-  margin: 0 $space-m;
+.link-container {
+  margin: $space-l 0;
 
-  &:first-child, &:last-child {
-    margin: 0;
+  a {
+    margin: 0 $space-m;
+
+    &:first-child, &:last-child {
+      margin: 0;
+    }
   }
 }
 
 .link-container__icon {
-  color: $light;
-  transition: color 300ms;
+  color: $font-light;
+  transition: color 200ms;
 
   &:hover {
-    color: $dark;
+    color: $font-dark;
   }
 }
 
 .hero {
-  padding: $space-m;
+  display: flex;
+  align-items: center;
+  height: 100%;
+}
+
+.hero__description {
+  user-select: none;
+}
+
+.hero__image {
+  overflow: hidden;
+  margin: $space-xl;
+  border-radius: 50%;
+
+  img {
+    height: 15rem;
+  }
 }

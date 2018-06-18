@@ -1,7 +1,13 @@
-$primary: #E85A4F;
-$secondary: #8E8D8A;
-$light: #EAE7DC;
-$dark: #2F4454;
+$primary: #106466;
+$primary-light: #499294;
+$primary-dark: #00393c;
+$secondary: #ffcb9a;
+$secondary-light: #fffecb;
+$secondary-dark: #ca9a6b;
+$background: $secondary;
+$font: #000;
+$font-light: hsla(0, 0%, 95%, 1);
+$font-dark: $primary-dark;
 
 $space-s: 0.5rem;
 $space-m: 1rem;

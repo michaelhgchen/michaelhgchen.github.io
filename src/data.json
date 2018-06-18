@@ -1,8 +1,9 @@
 {
   "name": "Michael Chen",
   "title": "Software Engineer",
-  "welcome": "Hi, I'm",
-  "description": "",
+  "image": "https://avatars1.githubusercontent.com/u/5447343?s=400&v=4",
+  "welcome": "",
+  "about": "Muffin.",
   "links": [
     {
       "type": "mail",

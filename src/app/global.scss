@@ -3,9 +3,9 @@
 
 /* tag overrides */
 html {
-  background-color: $dark;
+  background-color: $background;
   box-sizing: border-box;
-  color: $light;
+  color: $font;
   font-family: Roboto;
   height: 100%;
 }
@@ -34,7 +34,7 @@ h1, h2, h3, h4, h5, h6 {
     transition-delay: 500ms;
   }
 
-  .has-js .fade-out {
+  .fade-out {
     opacity: 0;
   }
 
