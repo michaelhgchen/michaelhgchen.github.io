@@ -335,7 +335,7 @@ h1, h2, h3, h4, h5, h6 {
   align-items: center;
   justify-content: center;
   height: 50vh;
-  min-height: 20rem; }
+  min-height: 30rem; }
 
 .page-half--primary {
   background-color: #106466;
@@ -391,17 +391,24 @@ h1, h2, h3, h4, h5, h6 {
     color: #00393c; }
 
 .hero {
-  display: flex;
-  align-items: center;
-  height: 100%; }
+  text-align: center; }
+  @media screen and (min-width: 40rem) {
+    .hero {
+      display: flex;
+      align-items: center; } }
 
 .hero__description {
   user-select: none; }
 
 .hero__image {
   overflow: hidden;
-  margin: 4rem;
+  margin: 2rem;
   border-radius: 50%; }
   .hero__image img {
-    height: 15rem; }
+    height: 10rem; }
+  @media screen and (min-width: 40rem) {
+    .hero__image {
+      margin: 4rem; }
+      .hero__image img {
+        height: 15rem; } }
 

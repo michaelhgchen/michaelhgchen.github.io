@@ -5,7 +5,7 @@
   align-items: center;
   justify-content: center;
   height: 50vh;
-  min-height: 20rem;
+  min-height: 30rem;
 }
 
 .page-half--primary {
@@ -80,9 +80,12 @@
 }
 
 .hero {
-  display: flex;
-  align-items: center;
-  height: 100%;
+  text-align: center;
+
+  @media screen and (min-width: $not-mobile-breakpoint) {
+    display: flex;
+    align-items: center;
+  }
 }
 
 .hero__description {
@@ -91,10 +94,18 @@
 
 .hero__image {
   overflow: hidden;
-  margin: $space-xl;
+  margin: $space-l;
   border-radius: 50%;
 
   img {
-    height: 15rem;
+    height: 10rem;
+  }
+
+  @media screen and (min-width: $not-mobile-breakpoint) {
+    margin: $space-xl;
+
+    img {
+      height: 15rem;
+    }
   }
 }
